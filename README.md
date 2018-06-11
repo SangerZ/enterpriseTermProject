@@ -1,4 +1,4 @@
-# enterpriseTermProject
+# enterpriseTermProject: The Tennis Shop
 
 Maven, GAE, Cloud SQL
 
