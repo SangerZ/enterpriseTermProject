@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee          http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <context-param>
+        <description>the relative path to product images</description>
+        <param-name>productImagePath</param-name>
+        <param-value>img/products</param-value>
+    </context-param>
+    <context-param>
+        <description>the relative path to category images</description>
+        <param-name>categoryImagePath</param-name>
+        <param-value>img/categories</param-value>
+    </context-param>
+    <servlet>
+        <servlet-name>HelloAppEngine</servlet-name>
+        <servlet-class>com.mycompany.termprojectmaven.HelloAppEngine</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ControllerServlet</servlet-name>
+        <servlet-class>com.mycompany.controller.ControllerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloAppEngine</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControllerServlet</servlet-name>
+        <url-pattern>/category</url-pattern>
+        <url-pattern>/viewCart</url-pattern>
+        <url-pattern>/checkout</url-pattern>
+        <url-pattern>/chooseLanguage</url-pattern>
+        <url-pattern>/addToCart</url-pattern>
+        <url-pattern>/updateCart</url-pattern>
+        <url-pattern>/purchase</url-pattern>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

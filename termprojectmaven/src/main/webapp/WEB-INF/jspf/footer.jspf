@@ -1,0 +1,13 @@
+            <div id="footer">
+                <br>
+                <hr id="footerDivider">
+                <p id="footerText" style="font-size: xx-small;">
+                    <a href="#">Privacy Policy</a>
+                    &nbsp;&nbsp;::&nbsp;&nbsp;
+                    <a href="#">Contact</a>
+                    &nbsp;&nbsp;&copy;&nbsp;&nbsp;
+                    2018 the tennis shop</p>
+            </div>
+        </div>
+    </body>
+</html>

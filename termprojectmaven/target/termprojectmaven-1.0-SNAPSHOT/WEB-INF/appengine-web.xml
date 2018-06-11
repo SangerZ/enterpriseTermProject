@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
+    <application>sangerz-project</application>
+    <version>1</version>
+    <threadsafe>true</threadsafe>
+    <use-google-connector-j>true</use-google-connector-j>
+    <system-properties>
+        <property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
+        <property name="cloudsql" value="jdbc:mysql://google/mydatabase?useSSL=false&amp;cloudSqlInstance=sangerz-project:us-central1:inventory&amp;socketFactory=com.google.cloud.sql.mysql.SocketFactory&amp;user=root&amp;password=admin" />
+    </system-properties>
+</appengine-web-app>
